@@ -1,3 +1,4 @@
+*,
 ::before,
 ::after {
   box-sizing: border-box;
@@ -6,6 +7,7 @@
 }
 
 body {
+  overflow-x: hidden;
   font-family: 'Raleway', sans-serif;
   background-color: #444;
   color: #999;
@@ -15,18 +17,18 @@ h1, h2 {
   color: white;
 }
 
-img {
-  width: 100vw;
-}
-
 h1 {
   text-align: center;
-  width: 100vw;
   position: absolute;
   background-color: rgba(0, 0, 0, .7);
   margin-bottom: 10px;
   padding: 5px;
   font-weight: 800;
+  font-size: 3rem;
+}
+
+h2 {
+  margin: 20px 0;
 }
 
 .hero {
@@ -36,8 +38,17 @@ justify-content: flex-end;
 align-items: center;
 }
 
+img {
+  width: 100vw;
+}
+
+
 .wrap {
-    padding: 15px;
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
 }
 
 .lead {
@@ -47,6 +58,12 @@ align-items: center;
     font-weight: 800;
     padding: 20px;
     border-radius: 10px;
+    margin-top: 30px;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 35px;
 }
 
 caption {
@@ -58,7 +75,9 @@ table {
     width: 100%;
     border: 1px solid #666;
     font-weight: 800;
+    font-size: 1.5rem;
     border-collapse: collapse;
+    margin-bottom: 40px;
 }
 
 td {
@@ -86,6 +105,7 @@ a {
 
 hr {
     border: 1px solid #666;
+    margin-bottom: 20px;
 }
 
 
